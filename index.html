@@ -2,127 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Interactive Photo Gallery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/app.js"></script>
+    <script src="js/searchFilter.js"></script>
 </head>
 <main>
     <body>
         <div class="search">
-            <input type="text" placeholder="Search">
+            <input type="search" name="search" id="search" placeholder="Search">
         </div>
         <div class = "gallery">
-            <div id="one" class="photo">
-                <figure>
-                    <img src="photos/01.jpg" alt="1st photo" width="200px" height="200px">
-                    <figcaption>
-                        Hay Bales
-                        I love hay bales. Took this snap on a drive through the countryside past some straw fields. 
-                    </figcaption>
-                </figure>
-            </div>
-            <div id="two" class="photo">
-                <figure>
-                    <img src="photos/02.jpg" alt="2nd photo" width="200px" height="200px">
-                    <figcaption>
-                        Lake 
-                        The lake was so calm today. We had a great view of the snow on the mountains from here.
-                    </figcaption>
-                </figure>
-            </div>
-            <div id="three" class="photo">
-                <figure>
-                    <img src="photos/03.jpg" alt="3rd photo" width="200px" height="200px">
-                    <figcaption>
-                        Canyon. 
-                        I hiked to the top of the mountain and got this picture of the canyon and trees below.
-                    </figcaption>
-                </figure>
-            </div>
-            <div id="four" class="photo">
-                <figure>
-                    <img src="photos/04.jpg" alt="4th photo" width="200px" height="200px">
-                    <figcaption>
-                        Iceberg. 
-                        It was amazing to see an iceberg up close, it was so cold but didn’t snow today.
-                    </figcaption>
-                </figure>
-            </div>
-            <div id="five" class="photo">
-                <figure>
-                    <img src="photos/05.jpg" alt="5th photo" width="200px" height="200px">
-                    <figcaption>
-                        Desert
-                        The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.
-                    </figcaption>
-                </figure>
-            </div>
-            <div id="six" class="photo">
-                <figure>
-                    <img src="photos/06.jpg" alt="6th photo" width="200px" height="200px">
-                    <figcaption>
-                        Fall
-                        Fall is coming, I love when the leaves on the trees start to change color.
-                    </figcaption>
-                </figure>
-            </div>
-            <div id="seven" class="photo">
-                <figure>
-                    <img src="photos/07.jpg" alt="7th photo" width="200px" height="200px">
-                    <figcaption>
-                        Plantation
-                        I drove past this plantation yesterday, everything is so green!
-                    </figcaption>
-                </figure>
-            </div>
-            <div id="eight" class="photo">
-                <figure>
-                    <img src="photos/08.jpg" alt="8th photo" width="200px" height="200px">
-                    <figcaption>
-                        Dunes
-                        My summer vacation to the Oregon Coast. I love the sandy dunes!
-                    </figcaption>
-                </figure>
-            </div>
-            <div id="nine" class="photo">
-                <figure>
-                    <img src="photos/09.jpg" alt="9th photo" width="200px" height="200px">
-                    <figcaption>
-                        Countryside Lane
-                        We enjoyed a quiet stroll down this countryside lane.
-                    </figcaption>
-                </figure>
-            </div>
-            <div id="ten" class="photo">
-                <figure>
-                    <img src="photos/10.jpg" alt="10th photo" width="200px" height="200px">
-                    <figcaption>
-                        Sunset
-                        Sunset at the coast! The sky turned a lovely shade of orange.
-                    </figcaption>
-                </figure>
-            </div>
-            <div id="eleven" class="photo">
-                <figure>
-                    <img src="photos/11.jpg" alt="11th photo" width="200px" height="200px">
-                    <figcaption>
-                        Cave
-                        I did a tour of a cave today and the view of the landscape below was breathtaking.
-                    </figcaption>
-                </figure>
-            </div>
-            <div id="twelve" class="photo">
-                <figure>
-                    <img src="photos/12.jpg" alt="12th photo" width="200px" height="200px">
-                    <figcaption>
-                        Bluebells
-                        I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.
-                    </figcaption>
-                </figure>
-            </div>
+                    <a href="photos/01.jpg" data-caption="Hay Bales. I love hay bales. Took this snap on a drive through the countryside past some straw fields." width="200px" height="200px">
+                        <img src="photos/thumbnails/01.jpg" alt="first image">
+                    </a>
+                    
+                    <a href="photos/02.jpg" data-caption="Lake. The lake was so calm today. We had a great view of the snow on the mountains from here." width="200px" height="200px">
+                        <img src="photos/thumbnails/02.jpg" alt="second image">
+                    </a>
+
+                    <a href="photos/03.jpg" data-caption="Canyon. I hiked to the top of the mountain and got this picture of the canyon and trees below." width="200px" height="200px">
+                        <img src="photos/thumbnails/03.jpg" alt="third image">
+                    </a>
+
+                    <a href="photos/04.jpg" data-caption="Iceberg. It was amazing to see an iceberg up close, it was so cold but didn’t snow today." width="200px" height="200px">
+                        <img src="photos/thumbnails/04.jpg" alt="fourth image">
+                    </a>
+
+                    <a href="photos/05.jpg" data-caption="Desert. The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons." width="200px" height="200px">
+                        <img src="photos/thumbnails/05.jpg" alt="fifth image">
+                    </a>
+
+                    <a href="photos/06.jpg" data-caption="Fall. Fall is coming, I love when the leaves on the trees start to change color." width="200px" height="200px">
+                        <img src="photos/thumbnails/06.jpg" alt="sixth image">
+                    </a>
+
+                    <a href="photos/07.jpg" data-caption="Plantation. I drove past this plantation yesterday, everything is so green!" width="200px" height="200px">
+                        <img src="photos/thumbnails/07.jpg" alt="seventh image">
+                    </a>
+
+                    <a href="photos/08.jpg" data-caption="Dunes. My summer vacation to the Oregon Coast. I love the sandy dunes!" width="200px" height="200px">
+                        <img src="photos/thumbnails/08.jpg" alt="eigth image">
+                    </a>
+
+                    <a href="photos/09.jpg" data-caption="Countryside Lane. We enjoyed a quiet stroll down this countryside lane." width="200px" height="200px">
+                        <img src="photos/thumbnails/09.jpg" alt="ninth image">
+                    </a>
+
+                    <a href="photos/10.jpg" data-caption="Sunset. Sunset at the coast! The sky turned a lovely shade of orange." width="200px" height="200px">
+                        <img src="photos/thumbnails/10.jpg" alt="tenth image">
+                    </a>
+
+                    <a href="photos/11.jpg" data-caption="Cave. I did a tour of a cave today and the view of the landscape below was breathtaking." width="200px" height="200px">
+                        <img src="photos/thumbnails/11.jpg" alt="eleventh image">
+                    </a>
+
+                    <a href="photos/012.jpg" data-caption="Bluebells. I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in." width="200px" height="200px">
+                        <img src="photos/thumbnails/12.jpg" alt="twelth image">
+                    </a>
         </div>
         <footer>
-
+            <p>
+                Joshua Igwe
+            </p>
         </footer>
     </body>
 

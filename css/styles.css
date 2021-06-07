@@ -15,14 +15,14 @@ figcaption {
     padding-left: 100px;
     padding-right: 100px;
 }
-input[type=text] {
+input[type=search] {
     border-radius: 5px;
     background-color: rgb(159, 159, 238);
     height: 50px;
     width: 100%;
 }
 
-input[type=text]::placeholder {
+input[type=search]::placeholder {
     text-align: center;
 }
 
